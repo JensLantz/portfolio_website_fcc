@@ -1,62 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Portfolio Website-Brad</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- linking css file -->
-  <link rel="stylesheet" href="style.css">
-  <!-- bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <title>Portfolio Website-Brad</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+    <!-- animate on scroll CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
+<body>
 
 <!-- NAVBAR -->
 
 <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" href="#">Jens</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="container">
+        <a class="navbar-brand" href="#">Jens</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skillset">Skillset</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
 <!-- MAIN BANNER -->
-<section class="bgimage" id="home">
+<section class="bgImageHome" id="home">
     <div class="container-fluid">
         <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-            <h2 class="hero_title">Hi, my name's Jens</h2>
-            <p class="hero_desc">I'm an aspiring Web Developer</p>
-        </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Hi, my name is Jens</h2>
+                <p class="hero_desc">aspiring web developer</p>
+            </div>
         </div>
     </div>
 </section>
 
+<!-- ABOUT SECTION -->
+<section id="about" data-aos="fade-up" data-aos-anchor-placement="top-center">
+    <div class="container mt-4 pt-4">
+        <h1 class="text-center">About Me</h1>
+        <div class="row mt-4">
+            <div class="col-lg-4 mt-4">
+                <img src="images/about.jpg" class="rounded imageAboutPage" alt="">
+            </div>
+            <div class="col-lg-8">
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <ul class="aboutList">
+                            <li>Name: Jens Lantz</li>
+                            <li>Age: 23</li>
+                            <li>Occupation: Web Developer</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="mt-3">
+                    I would describe myself as a native techie, meaning that I found my passion for computers and
+                    technology very early; it might also be a result of my gadget inclined father and internet
+                    enlightened brothers. At the moment, I’m finishing my Master's degree in Information Systems at Lund
+                    University; thereafter, I’m on the hunt for an exceptional talent program where I can challenge
+                    myself within the realms of software development to acquire new skills among senior professionals
+                    and likeminded talents. Throughout my education and growth as a developer I’ve learnt many
+                    languages, such as Java, C#, JavaScript, Python, SQL, and many surrounding technologies, such as
+                    Git, Microsoft SQL Server, and Java EE. With this constant new exposure, I’ve come to realize
+                    that the most important skill I possess is being able to learn quickly and intuitively.
+                </p>
+                <div class="row mt-3">
+                    <p> This conceptual view is something I use in environments other than software development too; for
+                        example, I am well versed in modeling languages such as UML, ER, and BPMN, and have used these
+                        languages extensively during full stack system designs and implementations in mock cases during
+                        the course of my education.
+                    </p>
+                    <div class="row">
+                        <p>To round things off, besides software development some of my interests include:</p> 
+                            <ul class="aboutList">
+                                <li>1) Board games, with Sequence being a personal favorite.</li>
+                                <li>2) Music production, where I'm drawn to the modular design of Ableton.</li>
+                                <li>3) Weightlifting, to make sure I don't become one with my office chair.</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
 
-    <!-- load javascript after loading all html content -->
-    <script src="script/script.js"></script>
+<!-- SKILLSET-->
+<section id="skillset" class="bgImageSkillset skillsetSection" data-aos="fade-up" data-aos-anchor-placement="top-center">
+    <div class="container skillsetContent">
+        <h1 class="text-center text-white">Skillset</h1>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="card skillText">
+                    <div class="card-body">
+                        <i class="fas servicesIcon fa-clock"></i>
+                        <h4 class="card-title mt-3">Website Development</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="card skillText">
+                    <div class="card-body">
+                        <i class='fas servicesIcon fa-layer-group'></i>
+                        <h4 class="card-title mt-3">Website Design</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4 mt-4">
+                <div class="card skillText">
+                    <div class="card-body">
+                        <i class='far servicesIcon fa-check-circle'></i>
+                        <h4 class="card-title mt-3">Website Deployment</h4>
+                        <p class="card-text mt-3">Some quick example text to build on the card title and make up the bulk of the card's content.
+                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                        </p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- load javascript after loading all html content -->
+<script src="script/script.js"></script>
+<!-- animate on scroll JS CDN -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+	duration: 600,
+});
+  </script>
 </body>
+
 </html>
